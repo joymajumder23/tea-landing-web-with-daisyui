@@ -14,28 +14,52 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font awesome link -->
+    <script src="https://kit.fontawesome.com/adb9227d40.js" crossorigin="anonymous"></script>
     <!-- Tailwind CSS custom color script -->
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
     <style>
-        .font-manrope{
+        .font-manrope {
             font-family: 'Manrope', sans-serif;
         }
     </style>
 </head>
 
 <body>
-    <header>
-
+    <header class="container mx-auto">
+        <div class="hero">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+                <div>
+                    <img src="/images/banner.png"
+                    class="max-w-sm w-96 h-5/6" />
+                    <div class="-mt-16 flex items-center gap-3 drop-shadow-lg bg-white rounded-lg px-6 py-5 w-60">
+                        <i class="fa-solid fa-star text-3xl text-yellow-400"></i>
+                        <div>
+                            <h3>5.00</h3>
+                            <p>Trust Pilot Ratings</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="text-7xl font-extrabold">
+                        It's good <br> 
+                        tea time at <br>
+                        The Tea House</h1>
+                    <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                    <button class="btn btn-primary">Explore More</button>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
 
